@@ -20,7 +20,7 @@ app.use(cookieParser());
 // CORS configuration
 app.use(
     cors({
-        origin: process.env.ORIGIN || 'http://localhost:3000',
+        origin: process.env.ORIGIN || 'https://useer-management-client.onrender.com',
         credentials: true,
     })
 );
