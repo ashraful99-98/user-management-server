@@ -20,27 +20,10 @@ app.use(cookieParser());
 // CORS configuration
 app.use(
     cors({
-        origin: process.env.ORIGIN || 'https://useer-management-client.onrender.com',
+        origin: process.env.ORIGIN || 'https://user-management-client-eight.vercel.app',
         credentials: true,
     })
 );
-
-// const cors = require("cors");
-
-// app.use(
-//     cors({
-//         origin: process.env.ORIGIN || "https://user-management-client-eight.vercel.app",
-//         methods: ["GET", "POST", "PUT", "DELETE"],
-//         credentials: true, // Allows cookies to be sent
-//         allowedHeaders: ["Content-Type", "Authorization"],
-//     })
-// );
-
-// app.use(cors({
-//     origin: ['https://user-management-client-eight.vercel.app'], // Replace with your frontend URL
-//     credentials: true
-// }));
-
 
 // MongoDB connection URI
 const dbUrl = `mongodb+srv://${process.env.DB_USER_NAME}:${process.env.DB_USER_PASS}@cluster0.fgf3l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
